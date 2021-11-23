@@ -119,7 +119,7 @@ spec:
   selector:
     matchLabels:
       app: staff-service
-  replicas: 1
+  replicas: 2
   template: # template for the pods
     metadata:
       labels:
