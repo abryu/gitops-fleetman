@@ -1,0 +1,12 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-webapp
+  annotations:
+    kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+  defaultBackend:
+    service:
+      name: fleetman-webapp
+      port:
+        number: 80
